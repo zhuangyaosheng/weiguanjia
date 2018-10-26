@@ -1,0 +1,57 @@
+/* -----------------------------------------------------
+   created with https://www.codeandweb.com/texturepacker 
+   -----------------------------------------------------
+   $TexturePacker:SmartUpdate:0f6efaed1a6daf62e6235ae99031c768:817d1a15c7f7a6d9ce6bf77bee63d72a:770a42c6672cdb9b82dacc9c540ba9e5$
+   -----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(icon.png);}
+
+.case01 {width:355px; height:155px; background-position: -365px -600px}
+.case02 {width:355px; height:155px; background-position: -268px -270px}
+.case03 {width:355px; height:155px; background-position: -633px -270px}
+.case04 {width:355px; height:155px; background-position: -0px -435px}
+.case05 {width:355px; height:155px; background-position: -365px -435px}
+.case06 {width:355px; height:155px; background-position: -0px -600px}
+.code {width:102px; height:102px; background-position: -351px -136px}
+.hh {width:42px; height:19px; background-position: -0px -0px}
+.hsl {width:132px; height:22px; background-position: -209px -0px}
+.icon-cloud-lib {width:120px; height:76px; background-position: -142px -136px}
+.icon-data {width:124px; height:124px; background-position: -463px -136px}
+.icon-info {width:124px; height:124px; background-position: -0px -270px}
+.icon-moments {width:124px; height:124px; background-position: -134px -270px}
+.icon-network-data {width:124px; height:124px; background-position: -731px -136px}
+.icon-org {width:124px; height:124px; background-position: -865px -136px}
+.icon-regular {width:124px; height:124px; background-position: -597px -136px}
+.ionc-bask {width:62px; height:58px; background-position: -720px -68px}
+.ionc-bask:active {width:62px; height:58px; background-position: -864px -68px}
+.ionc-code {width:62px; height:58px; background-position: -936px -68px}
+.ionc-code:active {width:62px; height:58px; background-position: -792px -68px}
+.ionc-digital {width:62px; height:58px; background-position: -648px -68px}
+.ionc-digital:active {width:62px; height:58px; background-position: -0px -136px}
+.ionc-friend {width:62px; height:58px; background-position: -916px -0px}
+.ionc-friend:active {width:62px; height:58px; background-position: -576px -68px}
+.ionc-gather {width:62px; height:58px; background-position: -0px -68px}
+.ionc-gather:active {width:62px; height:58px; background-position: -772px -0px}
+.ionc-marketing {width:62px; height:58px; background-position: -628px -0px}
+.ionc-marketing:active {width:62px; height:58px; background-position: -700px -0px}
+.ionc-portraya:active {width:62px; height:58px; background-position: -844px -0px}
+.ionc-portrayal {width:62px; height:58px; background-position: -288px -68px}
+.ionc-redpacket {width:62px; height:58px; background-position: -432px -68px}
+.ionc-redpacket:active {width:62px; height:58px; background-position: -504px -68px}
+.ionc-reply {width:62px; height:58px; background-position: -360px -68px}
+.ionc-reply:active {width:62px; height:58px; background-position: -72px -68px}
+.ionc-tag {width:62px; height:58px; background-position: -144px -68px}
+.ionc-tag:active {width:62px; height:58px; background-position: -216px -68px}
+.logo {width:136px; height:55px; background-position: -482px -0px}
+.qy {width:39px; height:33px; background-position: -433px -0px}
+.icon-resource {width:69px; height:76px; background-position: -272px -136px}
+.icon-risk {width:60px; height:75px; background-position: -72px -136px}
+.ym {width:73px; height:20px; background-position: -126px -0px}
+.yzpz {width:72px; height:28px; background-position: -351px -0px}
+.zmc {width:64px; height:19px; background-position: -52px -0px}

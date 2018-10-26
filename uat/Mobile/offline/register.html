@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>微管家-员工微信统一管理软件，微管家助力业绩增长</title>
+  <meta name="keywords" content="微信个人号，聚合聊天，个人号管理，微信群管理，朋友圈营销，风控预警，杜绝封号，粉丝个人号运营，微信群营销。" />
+  <meta name="description" content="微信个人号统一管理运营维护，安全风控，杜绝封号。" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="./styles/swiper.min.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <script src="./scripts/zepto.min.js"></script>
+  <script src="./scripts/swiper.min.js"></script>
+  <script src="./scripts/flexible.js"></script>
+  <link rel="stylesheet" href="./styles/index.css?t=1">
+</head>
+<body class="offline-layout offline-overflow">
+  <iframe id="main" src="http://mobile.uat.m.aiagain.com/Mobile/register.html" frameborder="0"></iframe>
+</body>
+<script>
+  $(function(){
+    var jointUrl=function(objective,attribute){
+      var objectiveUrl=$(objective).attr(attribute);
+      var url = window.location.search;
+      if(!!url){
+        if (objectiveUrl.indexOf("?") != -1) {  
+          url ="&"+url.substr(1); 
+        };
+        objectiveUrl = objectiveUrl+url+"&txt="+encodeURIComponent(window.location.protocol+'//'+window.location.host); 
+      }else{
+        objectiveUrl = objectiveUrl+"?txt="+encodeURIComponent(window.location.protocol+'//'+window.location.host); 
+      };
+      $(objective).attr({[attribute]:objectiveUrl});
+    };
+    jointUrl("#main","src");
+  });
+</script>
+</html>

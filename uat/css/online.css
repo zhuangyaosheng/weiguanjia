@@ -1,0 +1,167 @@
+.online-hidden{
+  display: none !important;
+}
+.wgjia-online-steward{
+  background-color: #f5f5f5;
+}
+.wgjia-onlie_wrap{
+  padding-top:48px;
+  padding-bottom: 45px; 
+}
+.wgjia-customer-satisfaction{
+  padding-bottom: 75px;
+}
+.satisfaction_wrap{
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.wgjia-swiper_info{
+  padding-top: 254px;
+}
+.wgjia-onlie_wrap{
+  color: #000;
+  text-align: center;
+}
+.wgjia-onlie_wrap .h1-title{
+  font-size: 36px;
+  padding-bottom: 35px;
+}
+.online-p-des{
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.wgjia-customer-satisfaction .level-title{
+  text-align: center;
+  padding-top: 75px;
+}
+.wgjia-satisfaction_wrap-one{
+  padding-bottom: 82px;
+}
+.wgjia-satisfaction_image{
+  padding-top: 100px;
+  padding-left: 115px;
+}
+.wgjia-satisfaction__info{
+  float: left;
+  width: 645px;
+  padding-left: 75px;
+  padding-top: 115px;
+}
+.p-blod{
+  font-size: 18px;
+  font-weight: bold;
+}
+.superiority{
+  font-size: 16px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+.wgjia-satisfaction-explain{
+  font-size: 16px;
+  color: #666;
+}
+.wgjia-satisfaction_wrap-two{
+  padding-top: 42px;
+}
+.satisfaction_wrap-two-fl{
+  width: 550px;
+  padding-top: 40px;
+  padding-left: 96px;
+  padding-right: 76px;
+}
+.wgjia-satisfaction_wrap-three{
+  padding-top: 20px;
+}
+.three_image{
+  padding-left: 96px;
+}
+.three_info-fl{
+  padding-top: 75px;
+  padding-left: 75px;
+  width: 580px;
+}
+.wgjia-satisfaction_wrap-four{
+  padding-top: 80px;
+}
+.four_info-fl{
+  width: 532px;
+  padding-top: 65px;
+  padding-left: 96px;
+  padding-right: 50px;
+}
+.wgjia-satisfaction_wrap-five{
+  padding-top: 40px;
+}
+.five_image{
+  padding-left: 96px;
+}
+.five_info-fl{
+  width: 610px;
+  padding-top: 90px;
+  padding-left: 80px;
+}
+.wgjia-satisfaction_wrap-six{
+  padding-top: 50px;
+}
+.six_info-fl{
+  width: 530px;
+  padding-top: 75px;
+  padding-left: 96px;
+}
+.wgjia-risk-management{
+  text-align: center;
+  width: 100%;
+  padding-bottom: 72px;
+  background: url(../images/risk-management.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+.wgjia-risk-management_wrap .h1-title{
+  padding: 78px 0;
+  color: #fff;
+}
+.wgjia-risk-management__list{
+  padding-bottom: 72px;
+}
+.wgjia-risk-management__list li{
+  width: 316px;
+  padding: 55px 36px 40px;
+  height: 380px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.wgjia-risk-management__list li:first-child{
+  margin-right: 18px;
+}
+.wgjia-risk-management__list li:last-child{
+  margin-left: 18px;
+}
+.management__list__title{
+  height: 100px;
+  font-size: 24px;
+  color: #333;
+  padding-top: 38px;
+}
+.management__list__des{
+  margin: 0 auto;
+  width: 308px;
+  height: 152px;
+  font-size: 14px;
+  color:#333;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+}
+.wgjia-risk-management_wrap .advisory{
+  margin: 0;
+  color:#000;
+  border:2px solid #50de9c;
+  background-color: #fff;
+}
+.lift{
+  font-size: 16px;
+  color:#48b884;
+  font-weight: bold;
+}

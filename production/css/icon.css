@@ -1,0 +1,122 @@
+
+.icon{display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url("../images/icon.png");}
+/* .case01 {width:355px; height:155px; background-position: -366px -605px}
+.case02 {width:355px; height:155px; background-position: -207px -440px}
+.case03 {width:355px; height:155px; background-position: -572px -440px}
+.case04 {width:355px; height:155px; background-position: -366px -770px}
+.case05 {width:355px; height:155px; background-position: -1px -605px}
+.case06 {width:355px; height:155px; background-position: -1px -770px}
+.code {width:102px; height:102px; background-position: -1px -172px}
+.hh {width:42px; height:19px; background-position: -50px -1px}
+.hsl {width:132px; height:22px; background-position: -805px -306px}
+.icon-bask {width:62px; height:58px; background-position: -505px -86px}
+.icon-bask:hover {width:62px; height:58px; background-position: -289px -86px}
+li:hover .icon-bask {width:62px; height:58px; background-position: -289px -86px}
+.icon-cloud-lib {width:120px; height:76px; background-position: -242px -172px}
+.icon-code {width:62px; height:58px; background-position: -361px -86px}
+.icon-code:hover {width:62px; height:58px; background-position: -217px -86px}
+li:hover .icon-code {width:62px; height:58px; background-position: -217px -86px}
+.icon-community {width:124px; height:124px; background-position: -1px -306px}
+.icon-customer {width:124px; height:124px; background-position: -135px -306px}
+.icon-customer-servers {width:119px; height:121px; background-position: -113px -172px}
+.icon-data {width:124px; height:124px; background-position: -269px -306px}
+.icon-digital {width:62px; height:58px; background-position: -388px -1px}
+.icon-digital:hover {width:62px; height:58px; background-position: -748px -1px}
+li:hover .icon-digital {width:62px; height:58px; background-position: -748px -1px}
+.icon-friend {width:62px; height:58px; background-position: -460px -1px}
+.icon-friend:hover {width:62px; height:58px; background-position: -532px -1px}
+li:hover .icon-friend {width:62px; height:58px; background-position: -532px -1px}
+.icon-gather {width:62px; height:58px; background-position: -172px -1px}
+.icon-gather:hover {width:62px; height:58px; background-position: -244px -1px}
+li:hover .icon-gather {width:62px; height:58px; background-position: -244px -1px}
+.icon-info {width:124px; height:124px; background-position: -774px -172px}
+.icon-marketing {width:62px; height:58px; background-position: -1px -86px}
+.icon-marketing:hover {width:62px; height:58px; background-position: -604px -1px}
+li:hover .icon-marketing {width:62px; height:58px; background-position: -604px -1px}
+.icon-moments {width:124px; height:124px; background-position: -537px -306px}
+.icon-network-data {width:124px; height:124px; background-position: -671px -306px}
+.icon-org {width:124px; height:124px; background-position: -403px -306px}
+.icon-portrayal:hover {width:62px; height:58px; background-position: -820px -1px}
+li:hover .icon-portrayal {width:62px; height:58px; background-position: -820px -1px}
+.icon-portrayal {width:62px; height:58px; background-position: -676px -1px}
+.icon-redpacket {width:62px; height:58px; background-position: -73px -86px}
+.icon-redpacket:hover {width:62px; height:58px; background-position: -433px -86px}
+li:hover .icon-redpacket {width:62px; height:58px; background-position: -433px -86px}
+.icon-regular {width:124px; height:124px; background-position: -640px -172px}
+.icon-reply {width:62px; height:58px; background-position: -316px -1px}
+.icon-reply:hover {width:62px; height:58px; background-position: -892px -1px}
+li:hover .icon-reply {width:62px; height:58px; background-position: -892px -1px}
+.icon-shield {width:124px; height:124px; background-position: -506px -172px}
+.icon-tag {width:62px; height:58px; background-position: -577px -86px}
+.icon-tag:hover {width:62px; height:58px; background-position: -145px -86px}
+li:hover .icon-tag {width:62px; height:58px; background-position: -145px -86px}
+.icon-vermicelli {width:124px; height:124px; background-position: -372px -172px}
+.logo {width:196px; height:55px; background-position: -1px -440px}
+.qy {width:39px; height:33px; background-position: -1px -1px}
+.icon-resource {width:69px; height:76px; background-position: -723px -86px}
+.icon-risk {width:60px; height:75px; background-position: -102px -1px}
+.ym {width:73px; height:20px; background-position: -884px -86px}
+.yzpz {width:72px; height:28px; background-position: -802px -86px}
+.zmc {width:64px; height:19px; background-position: -649px -86px} */
+
+
+
+
+.icon-bask {width:62px; height:58px; background-position: -226px -261px}
+.stick:hover .icon-bask {width:62px; height:58px; background-position: -82px -261px}
+.icon-cloud-lib {width:120px; height:76px; background-position: -296px -329px}
+.icon-code {width:62px; height:58px; background-position: -82px -329px}
+.stick:hover .icon-code {width:62px; height:58px; background-position: -154px -261px}
+.icon-community {width:124px; height:124px; background-position: -10px -788px}
+.icon-customer {width:124px; height:124px; background-position: -10px -922px}
+.icon-customer-servers {width:119px; height:121px; background-position: -198px -520px}
+.icon-data {width:124px; height:124px; background-position: -278px -922px}
+.icon-digital {width:62px; height:58px; background-position: -10px -261px}
+.stick:hover .icon-digital {width:62px; height:58px; background-position: -298px -261px}
+.icon-friend {width:62px; height:58px; background-position: -370px -261px}
+.stick:hover .icon-friend {width:62px; height:58px; background-position: -298px -193px}
+.icon-friend-verdancy {width:53px; height:51px; background-position: -237px -62px}
+.benefit-info:hover .icon-friend-verdancy {width:53px; height:51px; background-position: -174px -62px}
+.icon-gather {width:62px; height:58px; background-position: -370px -193px}
+.stick:hover .icon-gather {width:62px; height:58px; background-position: -226px -193px}
+.icon-gather-verdancy {width:56px; height:53px; background-position: -366px -62px}
+.benefit-info:hover .icon-gather-verdancy {width:56px; height:53px; background-position: -300px -62px}
+.icon-group {width:84px; height:80px; background-position: -262px -415px}
+.stick:hover .icon-group {width:84px; height:80px; background-position: -168px -415px}
+.icon-info {width:124px; height:124px; background-position: -278px -654px}
+.icon-mark-code {width:18px; height:18px; background-position: -38px -10px}
+.icon-marketing {width:62px; height:58px; background-position: -10px -329px}
+.stick:hover .icon-marketing {width:62px; height:58px; background-position: -154px -329px}
+.icon-moments {width:124px; height:124px; background-position: -278px -788px}
+.icon-network-data {width:124px; height:124px; background-position: -10px -654px}
+.icon-org {width:124px; height:124px; background-position: -144px -654px}
+.stick:hover .icon-portrayal {width:62px; height:58px; background-position: -10px -193px}
+.icon-portrayal {width:62px; height:58px; background-position: -154px -193px}
+.icon-qq {width:20px; height:24px; background-position: -123px -10px}
+.icon-redpacket {width:62px; height:58px; background-position: -82px -193px}
+.stick:hover .icon-redpacket {width:62px; height:58px; background-position: -10px -125px}
+.icon-redpacket-verdancy {width:36px; height:42px; background-position: -273px -10px}
+.benefit-info:hover .icon-redpacket-verdancy {width:36px; height:42px; background-position: -10px -62px}
+.icon-regular {width:124px; height:124px; background-position: -144px -788px}
+.icon-reply {width:62px; height:58px; background-position: -226px -125px}
+.stick:hover .icon-reply {width:62px; height:58px; background-position: -361px -125px}
+.icon-reply-verdancy {width:49px; height:45px; background-position: -56px -62px}
+.benefit-info:hover .icon-reply-verdancy {width:49px; height:45px; background-position: -115px -62px}
+.icon-resource {width:69px; height:76px; background-position: -10px -415px}
+.icon-safety {width:84px; height:100px; background-position: -104px -520px}
+.stick:hover .icon-safety {width:84px; height:100px; background-position: -10px -520px}
+.icon-shield {width:124px; height:124px; background-position: -144px -922px}
+.icon-sx-group {width:44px; height:42px; background-position: -373px -10px}
+.benefit-info:hover .icon-sx-group {width:44px; height:42px; background-position: -319px -10px}
+.icon-sx-resource {width:53px; height:58px; background-position: -298px -125px}
+.icon-tag {width:62px; height:58px; background-position: -154px -125px}
+.stick:hover .icon-tag {width:62px; height:58px; background-position: -82px -125px}
+.icon-tag-verdancy {width:50px; height:40px; background-position: -153px -10px}
+.benefit-info:hover .icon-tag-verdancy {width:50px; height:40px; background-position: -213px -10px}
+.icon-telephone {width:20px; height:20px; background-position: -66px -10px}
+.icon-telephone-active {width:17px; height:20px; background-position: -96px -10px}
+.icon-top {width:18px; height:11px; background-position: -10px -10px}
+.icon-vermicelli {width:124px; height:124px; background-position: -327px -520px}
+.resource {width:69px; height:76px; background-position: -89px -415px}
+.retail-code {width:95px; height:95px; background-position: -356px -415px}
+.icon-risk {width:60px; height:75px; background-position: -226px -329px}

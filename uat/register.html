@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="renderer" content="webkit">
+  <title>微管家-员工微信统一管理软件，微管家助力业绩增长,微信个人号运营系统，聚合管理高效成单</title>
+  <meta name="keywords" content="微信个人号，聚合聊天，个人号管理，微信群管理，朋友圈营销，风控预警，杜绝封号，粉丝个人号运营，微信群营销。" />
+  <meta name="description" content="微信个人号统一管理运营维护，安全风控，杜绝封号。" />
+  <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+  <link rel="stylesheet" href="./css/icon.css">
+  <link rel="stylesheet" href="./css/index.css?t=7">
+  <script src="./script/jquery-1.7.1.js"></script>
+  <script src="./script/jquery.scrollTo.js"></script>
+  <script src="./script/swiper-3.4.2.jquery.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <div class="fixed-height">
+      <div class="layout-layer wgjia-header online">
+        <div class="layer-wrap clearfix p-lr36">
+          <div class="wgjia-logo fl">
+            <img src="./images/logo.png" alt="logo">
+            <span class="logo-des">微信个人号领军品牌</span>
+          </div>
+          <ul class="nav fr clearfix">
+            <li>
+              <a href="/#home" class="active">首页</a>
+            </li>
+            <li class="stewards">
+              <a href="/#stewards">功能介绍</a>
+            </li>
+            <li class="case">
+              <a href="/#case">我的客户</a>
+            </li>
+            <li>
+              <div class="btn-box">
+                <a class="service" href="https://kf.wechatone.com/user/login/">客服登录</a>
+                <a class="administer" style="padding: 0 5px;" href="https://kf.wechatone.com/admin/#/login">管理登录</a>
+                <a class="register" href="javascript:;">免费注册</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="layout-layer retail retail-header">
+        <div class="layer-wrap clearfix p-lr36">
+          <div class="wgjia-logo fl">
+            <img src="./images/retail-logo.png" alt="logo">
+            <span class="logo-des">微信个人号领军品牌</span>
+          </div>
+          <ul class="nav fr clearfix">
+            <li>
+              <a href="/#home" class="active">首页</a>
+            </li>
+            <li>
+              <a href="/#solution">解决方案</a>
+            </li>
+            <li>
+              <a href="/#aggregation">云客服</a>
+            </li>
+            <li>
+              <a href="/#servicearea">服务范围</a>
+            </li>
+            <li>
+              <div class="btn-box">
+                <a class="service" href="https://kf.wechatone.com/user/login/">客服登录</a>
+                <a class="administer" style="padding: 0 5px;" href="https://kf.wechatone.com/admin/#/login">管理登录</a>
+                <a class="register" href="javascript:;">免费注册</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="layout-layer">
+      <div class="common">
+        <iframe id="main" name="main" frameborder="0" scrolling="no" src="http://uat.agent.aiagain.com/UserRegister/Main2" width="100%" height="950px"></iframe>
+      </div>
+    </div>
+    <div class="layout-layer retail-footer">
+      <div class="retail-footer__contact">
+        <p class="main-company" id="mainCompany">微管家是广州市喵鲜贸易有限公司旗下的一款产品</p>
+        <p>了解更多产品,请拨打：400-8320-166    邮箱：info@aiagain.com</p>
+      </div>
+    </div>
+    <div class="layout-layer wgjia-records retail-footer__records">Copyright ©2018<span id="host">www.wechatone.com</span> 版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备13082124号-2</a></div>
+    <div class="retail-buoy">
+      <ul>
+        <li class="consultHover">
+          <a target="_blank" class="icon icon-qq" href="http://wpa.qq.com/msgrd?v=3&uin=3004592282&site=qq&menu=yes"></a>
+          <p class="consult">欢迎您的咨询</p>
+        </li>
+        <li class="telephoneHover">
+          <i class="icon icon-telephone"></i>
+          <div class="telephone">
+            <i class="icon icon-telephone-active float-left"></i><span>400-8320-166</span>
+          </div>
+        </li>
+        <li class="markCodeHover">
+          <i class="icon icon-mark-code"></i>
+          <img src="./images/retail-code.png" class="markCode">
+        </li>
+        <li class="back-top"><i class="icon icon-top"></i></li>
+      </ul>
+    </div>
+</body>
+<script src="./script/index.js?t=7"></script>
+<script>
+  (function () {
+    var iframSrc = $("#main").attr("src");
+    var url = window.location.search;
+    if (!!url) {
+      if (iframSrc.indexOf("?") != -1) {
+        url = "&" + url.substr(1) + "&backUrl=" + encodeURIComponent(window.location.protocol + '//' + window.location
+            .host) + "&agree=" + encodeURIComponent(window.location.protocol + '//' + window.location.host) +
+          "/agreement.html";
+      }
+      iframSrc = iframSrc + url + "&backUrl=" + encodeURIComponent(window.location.protocol + '//' + window.location.host) +
+        "&agree=" + encodeURIComponent(window.location.protocol + '//' + window.location.host) + "/agreement.html";
+    }
+    $("#main").attr({
+      "src": iframSrc
+    });
+  })();
+</script>
+</html>
