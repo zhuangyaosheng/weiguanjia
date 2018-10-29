@@ -25,7 +25,6 @@ html,body{
   clear:both;
 }
 .clearfix {
-  overflow: auto;
   zoom: 1;
 }
 ul li{
@@ -1346,4 +1345,48 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active{
   background-size: 20px 24px;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+/* 登录下拉菜单 */
+.dropdown-box {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-btn {
+  padding: 0;
+  width: 90px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  color: #48b884;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #48b884;
+  background: #fff;
+  cursor: pointer;
+}
+.dropdown-content {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  display: none;
+}
+.dropdown-content a {
+  width: 90px !important;
+  border-radius: 0 !important;
+  background: #fff;
+}
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.show {
+  display: block !important;
 }

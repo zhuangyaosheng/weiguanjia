@@ -24,7 +24,13 @@
             <img src="./images/online-logo.png" alt="微管家logo">
         </div>
         <div class="online-header__btn online-flex-align-center">
-            <a href="https://kf.wechatone.com/user/login/" class="online-header__btn--login online-flex-align-center">登录</a>
+            <div class="dropdown-box">
+                <div class="dropdown-btn">登录<span class="caret"></span></div>
+                <div class="dropdown-content">
+                    <a href="https://kf.wechatone.com/user/login/">服务器1登录</a>
+                    <a href="https://kf2.wechatone.com/user/login/">服务器2登录</a>
+                </div>
+            </div>
             <a href="./register.html?rt=8&come=1" class="online-header__btn--experience online-flex-align-center" id="onlineRegister">免费注册</a>
         </div>
     </header>
@@ -346,6 +352,17 @@
         jointUrl("#onlineRegister","href");
         jointUrl("#onlineBannerReg","href");
         $("#onlineFooterCopy").text(window.location.hostname);
+
+         // 下拉按钮
+         $(".dropdown-btn").on("click", function () {
+            $(this).siblings(".dropdown-content").toggleClass("show");
+        });
+
+        $(window).on("click", function (e) {
+            if (!$(e.target).hasClass("dropdown-btn") && !$(e.target).hasClass("caret")) {
+                $(".dropdown-content").removeClass("show");
+            }
+        });
     </script>
 </body>
 

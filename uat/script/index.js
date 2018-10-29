@@ -283,3 +283,13 @@ var judgeInfo = function(){
     }, error: function (response) { console.log(response); }
   });
 }
+
+$(".dropdown-btn").on("click", function() {
+  $(this).siblings(".dropdown-content").toggleClass("show");
+});
+
+$(window).on("click", function(e) {
+  if (!$(e.target).hasClass("dropdown-btn")) {
+    $(".dropdown-content").removeClass("show");
+  }
+});

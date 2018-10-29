@@ -244,3 +244,13 @@ $(".consultHover").mouseenter(function(){
 }).mouseleave(function(){
   $(".consult").animate({"right":"-300px"});
 });
+
+$(".dropdown-btn").on("click", function() {
+  $(this).siblings(".dropdown-content").toggleClass("show");
+});
+
+$(window).on("click", function(e) {
+  if (!$(e.target).hasClass("dropdown-btn")) {
+    $(".dropdown-content").removeClass("show");
+  }
+});
