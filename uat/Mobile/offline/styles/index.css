@@ -628,3 +628,6 @@ iframe#main{
 .show {
   display: block !important;
 }
+.is-wechatone {
+  display: none;
+}

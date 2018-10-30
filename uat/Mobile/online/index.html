@@ -24,14 +24,14 @@
             <img src="./images/online-logo.png" alt="微管家logo">
         </div>
         <div class="online-header__btn online-flex-align-center">
-            <div class="dropdown-box">
+            <div class="dropdown-box is-wechatone">
                 <div class="dropdown-btn">登录<span class="caret"></span></div>
                 <div class="dropdown-content">
                     <a href="https://kf.wechatone.com/user/login/">服务器1登录</a>
                     <a href="https://kf2.wechatone.com/user/login/">服务器2登录</a>
                 </div>
             </div>
-            <!-- <a href="https://kf.wechatone.com/user/login/" class="online-header__btn--login online-flex-align-center">登录</a> -->
+            <a href="https://kf.wechatone.com/user/login/" class="online-header__btn--login online-flex-align-center not-wechatone">登录</a>
             <a href="./register.html?rt=8&come=1" class="online-header__btn--experience online-flex-align-center" id="onlineRegister">免费注册</a>
         </div>
     </header>
@@ -364,6 +364,26 @@
                 $(".dropdown-content").removeClass("show");
             }
         });
+
+        //配置域名和需要显示的板块  
+        var config = [
+            {
+            "host": "customerservice.uat.aiagain.com",
+            "wechatone": true
+            },
+            {
+            "host": "offlineservice.uat.aiagain.com",
+            "wechatone": true
+            }
+        ];
+        for(var i=0;i<config.length;i++){
+            if(window.location.host.indexOf(config[i].host) > -1){
+            if(config[i].wechatone==true){
+                $(".is-wechatone").css("display","inline-block");
+                $(".not-wechatone").hide();
+            }
+            }
+        };
     </script>
 </body>
 

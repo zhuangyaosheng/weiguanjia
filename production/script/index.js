@@ -20,7 +20,8 @@ var config=[
   {
     "host":"retail.wechatone.com",
     "del":true,
-    "versions":2//显示那个版块  备注：1 线上版 2 线下版
+    "versions":2, //显示那个版块  备注：1 线上版 2 线下版
+    "wechatone": true
   },
   {
     "host":"wgjx.aliagain.com",
@@ -40,7 +41,8 @@ var config=[
   {
     "host":"www.wechatone.com",
     "del":true,
-    "versions":1//显示那个版块  备注：1 线上版 2 线下版
+    "versions":1, //显示那个版块  备注：1 线上版 2 线下版
+    "wechatone": true
   },
   {
     "host":"wgj.aiagain.com",
@@ -108,6 +110,10 @@ for(var i=0;i<config.length;i++){
       console.log(config[i].del)
       $("#mainCompany").remove();
     };
+    if(config[i].wechatone==true){
+      $(".is-wechatone").css("display","inline-block");
+      $(".not-wechatone").hide();
+    }
   }
 };
 

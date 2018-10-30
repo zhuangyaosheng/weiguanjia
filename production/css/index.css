@@ -1390,3 +1390,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active{
 .show {
   display: block !important;
 }
+.is-wechatone {
+  display: none;
+}

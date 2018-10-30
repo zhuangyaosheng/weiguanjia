@@ -60,12 +60,14 @@ var config=[
   {
     "host":"customerservice.uat.aiagain.com",
     "del":false,
-    "versions":1//显示那个版块  备注：1 线上版 2 线下版
+    "versions":1, //显示那个版块  备注：1 线上版 2 线下版
+    "wechatone": true
   },
   {
     "host":"offlineservice.uat.aiagain.com",
     "del":false,
-    "versions":2//显示那个版块  备注：1 线上版 2 线下版
+    "versions":2, //显示那个版块  备注：1 线上版 2 线下版
+    "wechatone": true
   },
   {
     "host":"wgj.aiagain.com",
@@ -82,15 +84,15 @@ var config=[
   
   ,
   {
-    "host":"127.0.0.1:8080",
-    "del":true,
-    "versions":2//显示那个版块  备注：1 线上版 2 线下版
+    "host":"customerservice-not.uat.aiagain.com",
+    "del":false,
+    "versions":1//显示那个版块  备注：1 线上版 2 线下版
   },
   {
-    "host":"192.168.191.1:8080",
+    "host":"offlineservice-not.uat.aiagain.com",
     "del":false,
     "versions":2//显示那个版块  备注：1 线上版 2 线下版
-  }
+  },
 ];
 //1 线上版
 var _versions01=function(){
@@ -153,6 +155,10 @@ for(var i=0;i<config.length;i++){
     if(config[i].del==true){
       $("#mainCompany").remove();
     };
+    if(config[i].wechatone==true){
+      $(".is-wechatone").css("display","inline-block");
+      $(".not-wechatone").hide();
+    }
   }
 };
 
