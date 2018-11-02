@@ -86,12 +86,14 @@ var config=[
   {
     "host":"customerservice-not.uat.aiagain.com",
     "del":false,
-    "versions":1//显示那个版块  备注：1 线上版 2 线下版
+    "versions":1, //显示那个版块  备注：1 线上版 2 线下版
+    "delClass": ".block--del"
   },
   {
     "host":"offlineservice-not.uat.aiagain.com",
     "del":false,
-    "versions":2//显示那个版块  备注：1 线上版 2 线下版
+    "versions":2, //显示那个版块  备注：1 线上版 2 线下版
+    "delClass": ".block--del"
   },
 ];
 //1 线上版
@@ -158,6 +160,9 @@ for(var i=0;i<config.length;i++){
     if(config[i].wechatone==true){
       $(".is-wechatone").css("display","inline-block");
       $(".not-wechatone").hide();
+    }
+    if(!!config[i].delClass){
+      $(config[i].delClass).remove();
     }
   }
 };
