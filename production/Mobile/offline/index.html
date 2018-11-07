@@ -27,7 +27,7 @@
           <a href="https://kf2.wechatone.com/user/login/">服务器2登录</a>
         </div>
       </div>
-      <a class="offline-login not-wechatone" href="https://kf.wechatone.com/user/login/">登录</a>
+      <a class="offline-login not-wechatone block--del" href="https://kf.wechatone.com/user/login/">登录</a>
       <a class="offline-register" id="offlineRegister" href="./register.html?rt=9&come=1">免费注册</a>
     </div>
   </header>
@@ -248,6 +248,18 @@
       {
         "host": "retail.wechatone.com",
         "wechatone": true
+      },
+      {
+        "host": "wgj.168haoping.com",
+        "delClass": ".block--del"
+      },
+      {
+        "host": "wgjx.168shuadan.com",
+        "delClass": ".block--del"
+      },
+      {
+        "host": "wgj.aiagain.com",
+        "delClass": ".block--del"
       }
     ];
     for(var i=0;i<config.length;i++){
@@ -255,6 +267,9 @@
         if(config[i].wechatone==true){
           $(".is-wechatone").css("display","inline-block");
           $(".not-wechatone").hide();
+        }
+        if (config[i].delClass) {
+            $(config[i].delClass).remove();
         }
       }
     };

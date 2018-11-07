@@ -31,7 +31,7 @@
                     <a href="https://kf2.wechatone.com/user/login/">服务器2登录</a>
                 </div>
             </div>
-            <a href="https://kf.wechatone.com/user/login/" class="online-header__btn--login online-flex-align-center not-wechatone">登录</a>
+            <a href="https://kf.wechatone.com/user/login/" class="online-header__btn--login online-flex-align-center not-wechatone block--del">登录</a>
             <a href="./register.html?rt=8&come=1" class="online-header__btn--experience online-flex-align-center" id="onlineRegister">免费注册</a>
         </div>
     </header>
@@ -367,22 +367,37 @@
 
         //配置域名和需要显示的板块  
         var config = [
-        {
-            "host": "www.wechatone.com",
-            "wechatone": true
-        },
-        {
-            "host": "retail.wechatone.com",
-            "wechatone": true
-        }
+            {
+                "host": "www.wechatone.com",
+                "wechatone": true
+            },
+            {
+                "host": "retail.wechatone.com",
+                "wechatone": true
+            },
+            {
+                "host": "wgj.168haoping.com",
+                "delClass": ".block--del"
+            },
+            {
+                "host": "wgjx.168shuadan.com",
+                "delClass": ".block--del"
+            },
+            {
+                "host": "wgj.aiagain.com",
+                "delClass": ".block--del"
+            }
         ];
         for(var i=0;i<config.length;i++){
-        if(window.location.host.indexOf(config[i].host) > -1){
-            if(config[i].wechatone==true){
-            $(".is-wechatone").css("display","inline-block");
-            $(".not-wechatone").hide();
+            if(window.location.host.indexOf(config[i].host) > -1){
+                if(config[i].wechatone==true){
+                    $(".is-wechatone").css("display","inline-block");
+                    $(".not-wechatone").hide();
+                }
+                if (config[i].delClass) {
+                    $(config[i].delClass).remove();
+                }
             }
-        }
         };
     </script>
 </body>
