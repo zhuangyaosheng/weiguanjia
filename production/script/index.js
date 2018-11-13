@@ -32,13 +32,13 @@ var config=[
     "host":"wgjx.168shuadan.com",
     "del":false,
     "versions":2, //显示那个版块  备注：1 线上版 2 线下版
-    "delClass": ".block--del"
+    "delClass": ".del--login,.del--message"
   },
   {
     "host":"wgj.168haoping.com",
     "del":false,
     "versions":1, //显示那个版块  备注：1 线上版 2 线下版
-    "delClass": ".block--del"
+    "delClass": ".del--login"
   },
   {
     "host":"www.wechatone.com",
@@ -50,7 +50,7 @@ var config=[
     "host":"wgj.aiagain.com",
     "del":true,
     "versions":1, //显示那个版块  备注：1 线上版 2 线下版
-    "delClass": ".block--del"
+    "delClass": ".del--login"
   }
 ];
 //1 线上版
