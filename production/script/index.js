@@ -15,44 +15,71 @@ var ArrayIndexOf =function(arr,value){
 　　return -1;
 };
 
+/**
+ * @param {String} host -域名（必需）
+ * @param {Nunber} verions -显示那个版块  备注：1 线上版 2 线下版（必需）
+ * @param {String} delClass-要删除的class
+ * @param {Boolean} wechatone -是否微管家
+ */
+
 //配置域名和需要显示的板块  
 var config=[
   {
     "host":"retail.wechatone.com",
-    "del":true,
-    "versions":2, //显示那个版块  备注：1 线上版 2 线下版
-    "wechatone": true
+    "versions":2,
+    "wechatone": true,
+    "delClass": ".del--maincompany"
   },
   {
     "host":"wgjx.aliagain.com",
-    "del":true,
-    "versions":2//显示那个版块  备注：1 线上版 2 线下版
+    "versions":2,
+    "delClass": ".del--maincompany"
   },
   {
     "host":"wgjx.168shuadan.com",
-    "del":false,
-    "versions":2, //显示那个版块  备注：1 线上版 2 线下版
-    "delClass": ".del--login,.del--message"
+    "versions":2,
+    "delClass": ".del--login"
   },
   {
     "host":"wgj.168haoping.com",
-    "del":false,
-    "versions":1, //显示那个版块  备注：1 线上版 2 线下版
+    "versions":1,
     "delClass": ".del--login"
   },
   {
     "host":"www.wechatone.com",
-    "del":true,
-    "versions":1, //显示那个版块  备注：1 线上版 2 线下版
-    "wechatone": true
+    "versions":1,
+    "wechatone": true,
+    "delClass": ".del--maincompany"
   },
   {
     "host":"wgj.aiagain.com",
-    "del":true,
-    "versions":1, //显示那个版块  备注：1 线上版 2 线下版
-    "delClass": ".del--login"
+    "versions":1,
+    "delClass": ".del--login,.del--maincompany"
+  },
+  {
+    "host":"wgj.jingjingmall.cn",
+    "versions":1,
+    "wechatone": true,
+    "delClass": ".del--maincompany"
   }
 ];
+
+var uatConfig = [
+  {
+    "host":"offlineservice.uat.aiagain.com",
+    "versions":2,
+    "wechatone": true,
+    "delClass": ".del--maincompany"
+  },
+  {
+    "host":"customerservice.uat.aiagain.com",
+    "versions":1,
+    "wechatone": true,
+    "delClass": ".del--maincompany"
+  }
+];
+config = config.concat(uatConfig);
+
 //1 线上版
 var _versions01=function(){
   var userAgentInfo = navigator.userAgent;
@@ -108,10 +135,6 @@ for(var i=0;i<config.length;i++){
     }else{
       _versions01();
       $("#host").html(config[i].host);
-    };
-    if(config[i].del==true){
-      console.log(config[i].del)
-      $("#mainCompany").remove();
     };
     if(config[i].wechatone==true){
       $(".is-wechatone").css("display","inline-block");
