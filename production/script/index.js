@@ -19,6 +19,7 @@ var ArrayIndexOf =function(arr,value){
  * @param {String} host -域名（必需）
  * @param {Nunber} verions -显示那个版块  备注：1 线上版 2 线下版（必需）
  * @param {String} delClass-要删除的class
+ * @param {String} addClass-要增加的class
  * @param {Boolean} wechatone -是否微管家
  */
 
@@ -38,12 +39,16 @@ var config=[
   {
     "host":"wgjx.168shuadan.com",
     "versions":2,
-    "delClass": ".del--login"
+    "delClass": ".del--login,.del--footer",
+    "addClass": ".add--about,.add--miaoxian,.add--footer",
+    "gov":"粤ICP备17074504号-5",
   },
   {
     "host":"wgj.168haoping.com",
     "versions":1,
-    "delClass": ".del--login"
+    "delClass": ".del--login,.del--footer",
+    "addClass": ".add--about,.add--miaoxian,.add--footer",
+    "gov":"粤ICP备17074504号-1",
   },
   {
     "host":"www.wechatone.com",
@@ -60,7 +65,9 @@ var config=[
     "host":"wgj.jingjingmall.cn",
     "versions":1,
     "wechatone": true,
-    "delClass": ".del--maincompany"
+    "delClass": ".del--maincompany,.del--footer",
+    "addClass": ".add--about,.add--xingwei,.add--footer",
+    "gov":"粤ICP备18044292号-4"
   }
 ];
 
@@ -76,7 +83,29 @@ var uatConfig = [
     "versions":1,
     "wechatone": true,
     "delClass": ".del--maincompany"
-  }
+  },
+  {
+    "host":"wgj-jingjingmall.uat.aiagain.com",
+    "versions":1,
+    "wechatone": true,
+    "delClass": ".del--maincompany,.del--footer",
+    "addClass": ".add--about,.add--xingwei,.add--footer",
+    "gov":"粤ICP备18044292号-4"
+  },
+  {
+    "host":"wgjx-168shuadan.uat.aiagain.com",
+    "versions":2,
+    "delClass": ".del--login,.del--footer",
+    "addClass": ".add--about,.add--miaoxian,.add--footer",
+    "gov":"粤ICP备17074504号-5",
+  },
+  {
+    "host":"wgj-168haoping.uat.aiagain.com",
+    "versions":1,
+    "delClass": ".del--login,.del--footer",
+    "addClass": ".add--about,.add--miaoxian,.add--footer",
+    "gov":"粤ICP备17074504号-1",
+  },
 ];
 config = config.concat(uatConfig);
 
@@ -136,12 +165,18 @@ for(var i=0;i<config.length;i++){
       _versions01();
       $("#host").html(config[i].host);
     };
+    if(!!config[i].gov){
+      $("#gov").html(config[i].gov);
+    };
     if(config[i].wechatone==true){
       $(".is-wechatone").css("display","inline-block");
       $(".not-wechatone").hide();
     }
     if(!!config[i].delClass){
       $(config[i].delClass).remove();
+    }
+    if(!!config[i].addClass){
+      $(config[i].addClass).show();
     }
   }
 };
